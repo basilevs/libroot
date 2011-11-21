@@ -4,8 +4,8 @@
 	dh $@
 
 override_dh_auto_build:
-	dh_auto_build --parallel $@
+	dh_auto_build --parallel
 
 override_dh_auto_configure:
-	./configure --prefix=/usr
+	./configure --prefix=/usr --disable-xrootd
 

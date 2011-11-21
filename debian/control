@@ -1,7 +1,7 @@
 Source: libroot
 Priority: extra
-Maintainer: unknown <gulevich@l3-2-gulevich.inp.nsk.su>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Maintainer: Vasili Gulevich <V.V.Gulevich@mail.ru>
+Build-Depends: debhelper (>= 7.0.0), autotools-dev, sed
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://root.cern.ch

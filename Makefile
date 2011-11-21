@@ -3,27 +3,24 @@
 LIBROOT_MAKEFILE:=$(abspath $(lastword $(MAKEFILE_LIST)))
 LIBROOT_BASE?=$(dir $(LIBROOT_MAKEFILE))
 
-TARBALL?=$(shell ls -l root_v*.source.tar.gz|tail -n 1)
+TARBALL?=$(shell ls root_v*.source.tar.gz|tail -n 1)
 VERSION?=$(patsubst root_v%.source.tar.gz,%,$(notdir $(TARBALL)))
 
-build: changelog
+libroot_$(VERSION).deb: changelog
 	cd root && dpkg-buildpackage -uc -us -b
 
-changelog: replace
+changelog: root/debian
 	sed -i s/@VERSION@/$(VERSION)/ root/debian/changelog
 	
 clean:
 	-rm -r root
 
-replace: root $(wildcard $(LIBROOT_BASE)/debian/*)
+root/debian: root $(wildcard $(LIBROOT_BASE)/debian/*)
 	-rm -r root/debian
 	cp -rP $(LIBROOT_BASE)/debian root/
+	touch root/debian
 
 root: $(TARBALL)
 	tar -xf $(TARBALL)
-
-
-
-	
-
+	-rm -r root/debian
 

@@ -1,0 +1,5 @@
+libroot (@VERSION@) unstable; urgency=low
+
+  * Automatically generated changelog.
+
+ -- Vasili Gulevich <V.V.Gulevich@mail.ru>  Wed, 02 Nov 2011 14:08:20 +0700

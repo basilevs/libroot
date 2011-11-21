@@ -1,0 +1,26 @@
+Source: libroot
+Priority: extra
+Maintainer: unknown <gulevich@l3-2-gulevich.inp.nsk.su>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Standards-Version: 3.9.2
+Section: libs
+Homepage: http://root.cern.ch
+#Vcs-Git: git://git.debian.org/collab-maint/root.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/root.git;a=summary
+
+
+Package: libroot-dev
+Section: libdevel
+Architecture: any
+Depends: libroot (= ${binary:Version})
+Description: Headers for ROOT scientific library
+ Install this if you want to use ROOT in your C applications.
+
+Package: libroot
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ROOT scientific library
+ The ROOT system provides a set of OO frameworks with all the functionality needed to handle and analyze large amounts of data in a very efficient way. Having the data defined as a set of objects, specialized storage methods are used to get direct access to the separate attributes of the selected objects, without having to touch the bulk of the data. Included are histograming methods in an arbitrary number of dimensions, curve fitting, function evaluation, minimization, graphics and visualization classes to allow the easy setup of an analysis system that can query and process the data interactively or in batch mode, as well as a general parallel processing framework, PROOF, that can considerably speed up an analysis. 
+ Thanks to the built-in CINT C++ interpreter the command language, the scripting, or macro, language and the programming language are all C++. The interpreter allows for fast prototyping of the macros since it removes the, time consuming, compile/link cycle. It also provides a good environment to learn C++. If more performance is needed the interactively developed macros can be compiled using a C++ compiler via a machine independent transparent compiler interface called ACliC.
+

@@ -1,0 +1,7 @@
+usr/lib/root/cint
+usr/lib/root/lib*.so
+usr/lib/root/lib*.rootmap
+usr/share/root/icons
+usr/share/root/fonts
+usr/bin/*
+

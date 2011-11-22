@@ -8,6 +8,7 @@ Usage
 * Navigate to Makefile
 * make download
 * make
+* sudo dpkg -i libroot_*_i386.deb  libroot-dev_*_i386.deb
 
 If you already have tarball of ROOT source named like root_v?.??.??.source.tar.gz you may use one of the following approaches:
 

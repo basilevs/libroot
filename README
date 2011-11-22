@@ -1,0 +1,18 @@
+Builds Debian package of ROOT scientific library.
+
+http://root.cern.ch
+
+Usage
+
+* Download and unpack.
+* Navigate to Makefile
+* make download
+* make
+
+If you already have tarball of ROOT source named like root_v?.??.??.source.tar.gz you may use one of the following approaches:
+
+* cd /tmp && TARBALL=full/path/to/tarball.source.tar.gz full/path/to/libroot/Makefile
+* cd full/path/to/tarball_folder && full/path/to/libroot/Makefile
+
+
+

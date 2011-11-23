@@ -1,4 +1,4 @@
-Builds Debian package of ROOT scientific library.
+Builds minimal Debian package of ROOT scientific library.
 http://root.cern.ch
 
 Only two packages are built: 
@@ -11,7 +11,7 @@ they don't support testing releases
 
 Usage
 
-* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev
+* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev liblzma-dev libglew-dev libftgl-dev libpcre3-dev libafterimage-dev
 * Download and unpack.
 * Navigate to Makefile
 * make download

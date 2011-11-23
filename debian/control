@@ -1,7 +1,7 @@
 Source: libroot
 Priority: extra
 Maintainer: Vasili Gulevich <V.V.Gulevich@mail.ru>
-Build-Depends: debhelper (>= 7.0.0), autotools-dev, sed
+Build-Depends: debhelper (>= 7.0.0), autotools-dev, sed, libglu-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://root.cern.ch

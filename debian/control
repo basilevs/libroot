@@ -1,7 +1,7 @@
 Source: libroot
 Priority: extra
 Maintainer: Vasili Gulevich <V.V.Gulevich@mail.ru>
-Build-Depends: debhelper (>= 7.0.0), libglu-dev, libxpm-dev, libxft-dev, libxext-dev, liblzma-dev, libglew-dev, libftgl-dev, libpcre3-dev
+Build-Depends: debhelper (>= 7.0.0), libglu-dev, libxpm-dev, libxft-dev, libxext-dev, liblzma-dev, libglew-dev, libftgl-dev, libpcre3-dev, libafterimage-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: http://root.cern.ch

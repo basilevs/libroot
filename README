@@ -1,9 +1,17 @@
 Builds Debian package of ROOT scientific library.
-
 http://root.cern.ch
+
+Only two packages are built: 
+* libroot package contains all binaries and shared libraries needed to run ROOT and programs using it
+* libroot-dev package contains headers needed to built programs using ROOT libraries
+
+More official ROOT repositiories can be watched on:
+http://wiki.debian.org/DebianScience/ROOT
+
 
 Usage
 
+* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev
 * Download and unpack.
 * Navigate to Makefile
 * make download

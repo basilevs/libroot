@@ -1,17 +1,16 @@
 Builds minimal Debian package of ROOT scientific library.
 http://root.cern.ch
 
+Official ROOT repositiories are listed on:
+http://wiki.debian.org/DebianScience/ROOT
+
 Only two packages are built: 
 * libroot package contains all binaries and shared libraries needed to run ROOT and programs using it
 * libroot-dev package contains headers needed to built programs using ROOT libraries
 
-Official ROOT repositiories are listed on:
-http://wiki.debian.org/DebianScience/ROOT
-they don't support testing releases
-
 Usage
 
-* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev liblzma-dev libglew-dev libftgl-dev libpcre3-dev libafterimage-dev
+* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev liblzma-dev libglew-dev libftgl-dev libpcre3-dev
 * Download and unpack.
 * Navigate to Makefile
 * make download

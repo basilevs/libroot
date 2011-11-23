@@ -10,17 +10,14 @@ Only two packages are built:
 
 Usage
 
-* sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev liblzma-dev libglew-dev libftgl-dev libpcre3-dev
-* Download and unpack.
-* Navigate to Makefile
-* make download
-* make
-* sudo dpkg -i libroot_*_i386.deb  libroot-dev_*_i386.deb
-
-If you already have tarball of ROOT source named like root_v?.??.??.source.tar.gz you may use one of the following approaches:
-
-* cd /tmp && TARBALL=full/path/to/tarball.source.tar.gz full/path/to/libroot/Makefile
-* cd full/path/to/tarball_folder && full/path/to/libroot/Makefile
+sudo apt-get install debhelper libglu-dev libxpm-dev libxft-dev libxext-dev liblzma-dev libftgl-dev libpcre3-dev
+sudo apt-get remove libglew\* #makes resulting package compatible with both Debian squeeze (Ubuntu lucid)  and wheezy.
+wget https://github.com/basilevs/libroot/tarball/master -O libroot.tgz
+tar -xzf libroot.tgz
+mv basilevs-libroot-* libroot
+libroot/Makefile download # you may skip this step if ROOT tarball is present in current folder
+libroot/Makefile
+sudo dpkg -i libroot_*_i386.deb libroot-dev_*_i386.deb
 
 
 

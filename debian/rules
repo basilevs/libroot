@@ -8,5 +8,4 @@ override_dh_auto_build:
 
 override_dh_auto_configure:
 	./configure --prefix=/usr --disable-xrootd --enable-rpath
-	echo -e misc:Features= >> libroot.substvars
-	grep 'Result: Enabled support for' config.log|cut -d ' ' -f 5- >> libroot.substvars
+	( echo -n misc:Features= ; grep 'Result: Enabled support for' config.log|cut -d ' ' -f 5- ) >> debian/substvars

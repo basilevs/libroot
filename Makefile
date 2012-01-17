@@ -25,4 +25,4 @@ root: $(TARBALL)
 	-rm -r root/debian
 
 download:
-	wget -c ftp://root.cern.ch/root/root_v5.30.04.source.tar.gz
+	wget -c ftp://root.cern.ch/root/root_v5.32.00.source.tar.gz

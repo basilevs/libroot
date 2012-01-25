@@ -3,9 +3,12 @@
 %:
 	dh $@
 
-override_dh_auto_build:
-	dh_auto_build --parallel
+clean:
+	dh_clean
 
-override_dh_auto_configure:
+binary binary-indep:
+	dh $@ --before dh_auto_configure
 	./configure --prefix=/usr --disable-xrootd --enable-rpath
 	( echo -n misc:Features= ; grep 'Result: Enabled support for' config.log|cut -d ' ' -f 5- ) >> debian/libroot.substvars
+	dh $@ --after dh_auto_configure
+
